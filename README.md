@@ -23,6 +23,14 @@ Run `npm test` to check the question bank (Node.js 22 recommended).
 
 The expected URL is <https://alexbernardino.github.io/optimization-quiz/>. All assets use relative paths, so the quiz works at this GitHub Pages project URL without a build-time base-path setting.
 
+## Student QR code
+
+The [high-resolution QR image](optimization-quiz-qr.png) opens the published quiz directly on a phone. It can be inserted into a lecture slide or printed for the classroom. After deployment, the image is also available at <https://alexbernardino.github.io/optimization-quiz/optimization-quiz-qr.png>.
+
+![QR code for the Optimization concept check](optimization-quiz-qr.png)
+
+To regenerate the image if the quiz URL changes, edit `QUIZ_URL` in `tools/generate_qr.py` and run the script with ReportLab and Pillow installed.
+
 ## Teaching notes
 
 The question bank follows the final Optimization chapter in `Machine_Learning_Slides_V5.pdf`, PDF pages 91–109 (numbered slides 90–108), plus the optimization-method overview. It assumes differentiable, unconstrained objectives and deliberately does not introduce cross-validation or later-course classifiers.
